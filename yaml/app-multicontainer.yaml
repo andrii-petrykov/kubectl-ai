@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp-multicontainer
+spec:
+  containers:
+    - name: app-container
+      image: app-image
+      # Prompt: Add settings for the primary container here
+    - name: sidecar-container
+      image: sidecar-image
+      # Prompt: Add settings for the sidecar container here

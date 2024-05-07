@@ -1,0 +1,14 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: myapp-cronjob
+spec:
+  schedule: "*/1 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: myapp-container
+              image: myapp-image
+              # Prompt: Define command or script to run in the cron job here

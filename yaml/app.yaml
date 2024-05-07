@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp
+spec:
+  containers:
+    - name: myapp-container
+      image: myapp-image
+      ports:
+        - containerPort: 80
+      # Prompt: Add environment variables here if needed
